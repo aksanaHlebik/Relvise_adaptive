@@ -276,10 +276,14 @@ body{
 
 /*-----------------------------------*/
 
-.services__body {
-	display: flex;
-	margin: 0px -15px -30px;
-	/*flex-wrap: wrap; - doesn't work*/
+
+
+@media (min-width: 670px){ /* если вложить .services__body в медиа то получается mobile-first*/
+	.services__body {
+		display: flex;
+		margin: 0px -15px -30px;
+		/*flex-wrap: wrap;- doesn't work*/
+	}
 }
 
 .services__column {
@@ -300,6 +304,7 @@ body{
 	background-color: #FFFFFF;
 	padding: 35px;
 	height: 100%;
+	
 }
 
 .item-service_green {
@@ -330,3 +335,168 @@ body{
 	line-height: 143%;
 }
 
+/*------------------------------------------*/
+
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2px;
+	margin-top: 111px;
+	
+}
+
+.header-block__title {
+	font-size: 40px;
+	line-height: 142%;
+	font-weight: 700;
+}
+
+.header-block__sub-title {
+	color: #737373;
+	line-height: 142%;
+
+}
+
+h2 {
+	margin: 0;
+}
+
+.advantages{
+	padding: 80px 0;
+	background: #fafafa;
+}
+
+.advantages__header{
+	margin: 0px 0px 50px 0px;
+}
+
+.advantages__body{
+	display: flex;
+	margin: 0px -15px -30px;
+}
+
+.advantages__column{
+	padding: 0px 15px;
+	margin: 0px 0px 30px 0px;
+	flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+	.advantages__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 560px) {
+	.advantages__column {
+		flex: 0 1 100%;
+	}
+}
+
+.advantages__item{
+	background-color: #fff;
+	padding: 30px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.advantages__item > *: not(:last-child){
+	margin: 0px 0px 10px 0px;
+}
+
+
+
+.advantages__value {
+	font-size: 40px;
+	line-height: 142%;
+	
+}
+
+.advantages__text {
+	color: #737373;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.1px;
+}
+
+.advantages__icon{
+	height: 48px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+/*-----------------------*/
+
+.practice {
+	padding: 125px 0px 80px 0px;
+}
+
+.practice__header {
+	margin: 0px 0px 45px 0px;
+}
+
+.practice__body {
+	margin: 0px -20px -30px;
+	display: flex;
+	/*flex-wrap: wrap; don't work*/
+}
+
+.practice__column {
+	padding: 0px 20px;
+	margin: 0px 0px 30px 0px;
+	flex: 0 1 25%;
+}
+
+@media (max-width: 1040px) {
+	.practice__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 630px) {
+	.practice__column {
+		flex: 0 1 100%;
+	}
+}
+
+.item-practice {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.item-practice__content {
+	padding: 30px;
+	flex: 1 1 auto;
+}
+
+.item-practice__link {
+	color: inherit;
+	display: inline-block;
+}
+
+.item-practice__links:hover {
+	text-decoration: underline;
+}
+
+.item-practice__link:not(:last-child) {
+	margin: 0px 0px 15px 0px;
+}
+
+.item-practice__title {
+	letter-spacing: 0.1px;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 700;
+}
+
+.item-practice__text {
+	color: #737373;
+	line-height: 142%;
+}
+
+.item-practice__image {
+	display: block;
+	padding: 0px 0px 60% 0px;
+}
